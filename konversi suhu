@@ -1,0 +1,24 @@
+program konversi_suhu;
+uses crt;
+var
+ a:integer;
+ t,s:real;
+begin
+clrscr;
+  writeln('1. Celcius ke fahrenheit');
+  writeln('2. Fahrenheit ke Celcius');
+  writeln('3. Celcius ke Kelvin');
+  writeln('4. Kelvin ke Celcius');
+  write('Pilih jenis konversi suhu(1-4): ');
+  readln(a);
+  write('masukkan nilai suhu: ');
+  readln(t);
+case (a) of
+ 1:s:=(9/5*t)+32;
+ 2:s:=(t-32)*5/9;
+ 3:s:=t+273;
+ 4:s:=t-273;
+ else writeln('tidak terdefinisi')
+end;
+ writeln('maka, suhu setelah dikonversi adalah: ',s:5:2);
+end.
