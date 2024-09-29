@@ -1,0 +1,26 @@
+program total_belanjaan;
+uses crt;
+var 
+x,tb:real;
+begin
+clrscr;
+ write('Total belanja: ');
+ readln(x);
+  if x<100000 then
+  begin
+  tb:=x*1;
+  end
+  else if (x>100000) and (x<500000) then
+  begin
+  tb:=x*0.9
+  end
+  else if (x>=500000) and (x<1000000) then
+  begin
+  tb:=x*0.8
+  end
+  else if x>1000000 then
+  begin
+  tb:=x*0.7
+end;
+writeln ('Total belanjaan yang anda harus bayarkan: ',tb:5:0);
+end.
