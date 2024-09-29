@@ -1,0 +1,22 @@
+program kalkulator;
+uses crt;
+var
+k:string;
+a,b,o:real;
+begin
+clrscr;
+write('Pilih kalkulator: ');
+readln(k);
+ write('masukkan nilai a: ');
+ readln(a);
+ write('masukkan nilai b: ');
+ readln(b);
+   case (k) of 
+   'penjumlahan','Penjumlahan','PENJUMLAHAN':o:=a+b;
+   'pengurangan','Pengurangan','PENGURANGAN':o:=a-b;
+   'perkalian','Perkalian','PERKALIAN':o:=a*b;
+   'pembagian','Pembagian','PEMBAGIAN':o:=a/b;
+else writeln('tidak terdefinisi');
+end;
+writeln('Hasil operasi a dan b adalah: ',o:5:2);
+end.
